@@ -28,7 +28,7 @@ for (i in names(dane)) {
   cat(paste("SD/mean dla", i, ":", sd_mean_ratio, "%", "\n"))
 }
 
-# Box ploty dla każdej zmiennej:
+# Box ploty dla każdej zmiennej:data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAbElEQVR4Xs2RQQrAMAgEfZgf7W9LAguybljJpR3wEse5JOL3ZObDb4x1loDhHbBOFU6i2Ddnw2KNiXcdAXygJlwE8OFVBHDgKrLgSInN4WMe9iXiqIVsTMjH7z/GhNTEibOxQswcYIWYOR/zAjBJfiXh3jZ6AAAAAElFTkSuQmCC
 windows() # pierwszy wykres
 par(mfrow=c(3,2))
 
@@ -39,9 +39,9 @@ for (i in seq_along(dane)) {
 
 
 # 2. sposób:
-lapply(seq_along(dane), function(i) {
-  boxplot(dane[[i]], horizontal = TRUE, ylab = names(dane)[i])
-})
+#lapply(seq_along(dane), function(i) {
+#  boxplot(dane[[i]], horizontal = TRUE, ylab = names(dane)[i])
+#})
 
 
 # Biblioteki
